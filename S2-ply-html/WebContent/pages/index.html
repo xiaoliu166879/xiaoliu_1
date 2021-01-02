@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>html 标签分页</h1>
+	<h4>1)标题：占据一整行</h4>
+	<h4>2)段落： p</h4>
+	<h4>3)列表 ul （无序列列表） 或者ol（有序列列表） li</h4>
+	<ul id = "edu_list">
+		<li>本科</li>
+		<li>高中</li>
+		<li>大专</li>
+	</ul>
+	<ol type="1">
+		<li>苹果</li>
+		<li>香蕉</li>
+		<li>栗子</li>
+	</ol>
+
+	<h4>4.介绍dl + dt + dd</h4>
+
+	<dl>
+		<dt>数学</dt>
+		<dd>加减乘除</dd>
+	</dl>
+
+	<h4>5. 表格 table +tr 行 + th 列头 + td 数据 + thead + tbody</h4>
+	<table border="1px" width="50%">
+		<tr>
+			<th>学号</th>
+			<th>班级</th>
+			<th>姓名</th>
+			<th>性别</th>
+		</tr>
+		<tr>
+			<td>001</td>
+			<td>网络1</td>
+			<td>刘秀</td>
+			<td>女</td>
+		</tr>
+		<tr>
+			<td>002</td>
+			<td>网络1</td>
+			<td>谢乐</td>
+			<td>女</td>
+		</tr>
+		<tr>
+			<td>003</td>
+			<td>网络1</td>
+			<td>小刘</td>
+			<td>男</td>
+		</tr>
+		<tr>
+			<td>001</td>
+			<td>网络2</td>
+			<td>满熊</td>
+			<td>男</td>
+		</tr>
+		<tr>
+			<td>总人数</td>
+			<td colspan="3">4</td>
+		</tr>
+
+	</table>
+
+	<h3>行级标签：是行内一块内容</h3>
+	<h4>(1). 图片 img</h4>
+	<ol type="1">
+		<li>图片的高度宽度同时指定，可能会产生变形</li>
+		<li>图片引用网络资源，src可以写网络路径</li>
+		<li>图片引用本地资源，src根据路径编写（上楼下楼）</li>
+	</ol>
+	<img alt="图片错误显示的文字" src="../images/aaac.jpg" width="200px">
+	<br>
+	<img alt="图片错误显示的文字" src="">
+	<br>
+	<img alt="图片错误显示的文字" src="">
+	<br>
+
+	<h4>（2).超链接</h4>
+	<ol type="1">
+		<li>超链接跳转定义在href ==》html ref 引用</li>
+		<li>跳转到外站资源==》 淘宝，必须以http开头</li>
+		<li>跳转到本站资源，地址格式参考img 的src</li>
+		<li>超链接可以实现页面内内导航，导航到错点位置指定的id</li>
+	</ol>
+	<a href = "https://www.bilibili.com/">bilibili</a><br>
+	<a href = "user/login.html">登录</a><br>
+	<a href = "#edu_list">跳转到学历列表</a><br>
+
+	<h4>(3).表单标签 form input button select  textarea</h4>
+	<ol type="1">
+		<li>action = "定义表单提交的资源路径==》跳转的页面"</li>
+		<li>跳转到外站资源==》 淘宝，必须以http开头</li>
+		<li>跳转到本站资源，地址格式参考img 的src</li>
+		<li>超链接可以实现页面内内导航，导航到错点位置指定的id</li>
+	</ol>
+	<form action = "action.html">
+		账号：<input placeholder = "请输入账号"><br>
+		密码：<input type="password"><br>
+		年龄：<input type="number"><br>
+		邮箱：<input type="email"><br>
+		爱好：<input type="checkbox">篮球
+		<input type="checkbox">读书
+		<input type="checkbox">电影
+		<input type="checkbox">游戏
+		<input type="checkbox">美女<br>
+		学历：<input name  = "edu" type = "radio">初中
+		<input name  = "edu" type = "radio">高中
+		<input name  = "edu" type = "radio">大专
+		<input name  = "edu" type = "radio">本科<br>
+		籍贯：<select>
+			<option>湖南</option>
+			<option>湖北</option>
+			<option>广东</option>
+			<option>广西</option>
+		</select><br>
+		介绍<textarea rows="10" cols="30">测试内容
+		
+		</textarea><br>
+		<input type = "submit" value = "submit提交按钮，点击会跳转到from 的action属性指定的资源"><br>
+		<input type = "button" value = "button普通按钮，默认不执行任何操作"><br>
+		<input type = "reset" value = "reset 重置按钮，重置表单的输入内容"><br>	
+	
+		<button>默认submit提交按钮</button><br>
+		<button type="button">button普通按钮</button><br>
+		<button type="reset">reset重置按钮</button><br>
+	
+	
+	</form>
+
+
+
+</body>
+</html>
