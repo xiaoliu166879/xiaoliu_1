@@ -3,8 +3,35 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<style type="text/css">
+#outer {
+	width: 500px;
+	height: 500px;
+	background: #999;
+}
+
+#inner {
+	width: 200px;
+	height: 200px;
+	background: #666;
+	border: red 10px solid;
+	/*margin: 30px;
+	/*padding-left: 10px;
+	padding-right: 20px;
+	padding-top: 30px;
+	padding-bottom: 40px;*/
+	padding:10px 20px 30px 40px;/*简写4个值  上右下左  顺时针*/
+	/*padding:10px 20px 30px;/*简写3个值   上   左右   下*/
+	/*padding:10px 20px;/*简写两个值   上下   左右*/
+	margin:auto;/*外边距的auto 实现左右居中*/
+	text-align:center;
+}	
+</style>
 </head>
 <body>
 
+	<div id="outer">
+		<div id="inner"></div>
+	</div>
 </body>
 </html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- 
+元素定位：
+浮动：float
+位置：position
+ -->
+<style type="text/css">
+#d1 {
+	width: 200px;
+	height: 200px;
+	background: red;
+}
+
+#d2 {
+	width: 400px;
+	height: 400px;
+	background: green;
+	position:absolute;
+	left:100px;
+	top:30px;
+}
+
+#d3 {
+	width: 600px;
+	height: 600px;
+	background: purple;
+}
+/*static静态
+  relative相对
+  absolute绝对  与浮动float一样，设置为绝对定位的元素，会脱离文档流（下面或者右边的元素会顶上来）
+  fixed固定  会脱离文档流（下面或者右边的元素会顶上来）固定一个位置不会动，滚动条滚动时也会跟着滚动 类似于广告
+  inherit继承*/
+</style>
+</head>
+<body>
+<div style ="padding:30px"></div>
+	<div id="d1"></div>
+	<div id="d2"></div>
+	<div id="d3"></div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+img {
+	width: 200px;
+	/*display:inline;*/
+	/*visibility:hidden;*/
+	/*block:块   
+	inline:行级元素 
+	inline-block:行内块   可设置高和宽 上面两个不能
+	none:不显示  --- display:none   相当于删除模块
+	visibility:hidden 不可见但是保留原有的位置，不脱离文档流
+	*/
+}
+#sp1{
+	background:green;
+	weight:100px;
+	height:200px;
+	display:inline-block;
+}
+li{
+	display:inline-block;
+}
+</style>
+</head>
+<body>
+	<span>普通文本标签用于设置文字样式</span>
+	<img alt="图片加载失败" src="../pics/aaaf.jpg">
+	<span id = "sp1">是行内块</span>
+	<ol>
+		<li>红色</li>
+		<li>绿色</li>
+		<li>蓝色</li>
+	</ol>
+</body>
+</html>
